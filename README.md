@@ -8,9 +8,6 @@ Ce projet est un système de messagerie utilisant RabbitMQ pour la gestion des m
 - [Configuration](#configuration)
 - [Lancer l'application](#lancer-lapplication)
 - [Utilisation de l'API](#utilisation-de-lapi)
-- [Déboguer avec Uvicorn et pdb](#déboguer-avec-uvicorn-et-pdb)
-- [Consommation des messages](#consommation-des-messages)
-- [Auteur](#auteur)
 
 ## Installation
 
