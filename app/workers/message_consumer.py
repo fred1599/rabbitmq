@@ -1,4 +1,3 @@
-import pika
 from app.core.rabbitmq import create_channel
 
 def callback(ch, method, properties, body):

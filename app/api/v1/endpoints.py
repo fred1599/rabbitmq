@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Query
 from app.services.message_service import MessageService
 from app.repositories.message_repository import MessageRepository
 from app.models.message import Message
@@ -10,7 +10,7 @@ message_repository = MessageRepository()
 message_service = MessageService(repository=message_repository)
 
 @router.post("/message/", response_model=Message)
-def create_message(content: str):
+def create_message(content: str = Query(...)):
     return message_service.create_message(content=content)
 
 @router.get("/messages/", response_model=List[Message])
